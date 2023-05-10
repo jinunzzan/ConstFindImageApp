@@ -14,6 +14,9 @@
 		593CDC792A0B2E5900E47648 /* ConstFindImageApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 593CDC772A0B2E5900E47648 /* ConstFindImageApp.xcdatamodeld */; };
 		593CDC7B2A0B2E5A00E47648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593CDC7A2A0B2E5A00E47648 /* Assets.xcassets */; };
 		593CDC7E2A0B2E5A00E47648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593CDC7C2A0B2E5A00E47648 /* LaunchScreen.storyboard */; };
+		593CDC872A0B31A000E47648 /* ImageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CDC852A0B31A000E47648 /* ImageListTableViewCell.swift */; };
+		593CDC882A0B31A000E47648 /* ImageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593CDC862A0B31A000E47648 /* ImageListTableViewCell.xib */; };
+		599DDBF32A0B4B1900372414 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 599DDBF22A0B4B1900372414 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,8 @@
 		593CDC7A2A0B2E5A00E47648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		593CDC7D2A0B2E5A00E47648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		593CDC7F2A0B2E5A00E47648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		593CDC852A0B31A000E47648 /* ImageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListTableViewCell.swift; sourceTree = "<group>"; };
+		593CDC862A0B31A000E47648 /* ImageListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599DDBF32A0B4B1900372414 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,8 @@
 				593CDC7C2A0B2E5A00E47648 /* LaunchScreen.storyboard */,
 				593CDC7F2A0B2E5A00E47648 /* Info.plist */,
 				593CDC772A0B2E5900E47648 /* ConstFindImageApp.xcdatamodeld */,
+				593CDC852A0B31A000E47648 /* ImageListTableViewCell.swift */,
+				593CDC862A0B31A000E47648 /* ImageListTableViewCell.xib */,
 			);
 			path = ConstFindImageApp;
 			sourceTree = "<group>";
@@ -86,6 +94,9 @@
 			dependencies = (
 			);
 			name = ConstFindImageApp;
+			packageProductDependencies = (
+				599DDBF22A0B4B1900372414 /* Kingfisher */,
+			);
 			productName = ConstFindImageApp;
 			productReference = 593CDC6B2A0B2E5900E47648 /* ConstFindImageApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 593CDC622A0B2E5900E47648;
+			packageReferences = (
+				599DDBF12A0B4B1900372414 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 593CDC6C2A0B2E5900E47648 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				593CDC7E2A0B2E5A00E47648 /* LaunchScreen.storyboard in Resources */,
+				593CDC882A0B31A000E47648 /* ImageListTableViewCell.xib in Resources */,
 				593CDC7B2A0B2E5A00E47648 /* Assets.xcassets in Resources */,
 				593CDC762A0B2E5900E47648 /* Main.storyboard in Resources */,
 			);
@@ -142,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				593CDC732A0B2E5900E47648 /* ViewController.swift in Sources */,
+				593CDC872A0B31A000E47648 /* ImageListTableViewCell.swift in Sources */,
 				593CDC6F2A0B2E5900E47648 /* AppDelegate.swift in Sources */,
 				593CDC792A0B2E5900E47648 /* ConstFindImageApp.xcdatamodeld in Sources */,
 				593CDC712A0B2E5900E47648 /* SceneDelegate.swift in Sources */,
@@ -362,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		599DDBF12A0B4B1900372414 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		599DDBF22A0B4B1900372414 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 599DDBF12A0B4B1900372414 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		593CDC772A0B2E5900E47648 /* ConstFindImageApp.xcdatamodeld */ = {
